@@ -1,0 +1,499 @@
+<!doctype html>
+<html
+  lang="id"
+  class="scroll-smooth"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Portfolio Cantik dengan Animations dan Effects Keren"
+    />
+    <title>My Awesome Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body id="home">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Atmospheric Elements -->
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div id="mouse-glow"></div>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#home"
+        >
+          <span class="brand-icon"></span><span class="brand-name">Rina Anggraeni</span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bi bi-list fs-1 text-primary"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      class="hero d-flex align-items-center"
+      id="home"
+    >
+      <div class="container position-relative z-2">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start fade-up">
+            <div class="mb-4">
+              <span class="badge bg-primary-light mb-3"> <i class="bi bi-star-fill"></i> Welcome to My Portfolio </span>
+            </div>
+
+            <h1 class="hero-title mb-3">Hi, I'm <span class="text-gradient">Rina Anggraeni</span></h1>
+
+            <p class="hero-subtitle mb-4"><span id="typing-text"></span><span class="cursor">|</span></p>
+
+            <p class="hero-description mb-4">
+              Saya adalah siswi SMKN 5 Malang yang berfokus pada Jurusan PPLG. Memiliki semangat tinggi untuk terus belajar teknologi terbaru, merancang tampilan aplikasi yang menarik, dan siap berkolaborasi dalam tim.
+            </p>
+
+            <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+              <a
+                href="#projects"
+                class="btn btn-primary btn-lg rounded-pill"
+              >
+                Lihat Proyek <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary btn-lg rounded-pill"
+              >
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 fade-up">
+            <div class="hero-image-wrapper">
+              <div class="blob-shape"></div>
+              <img
+                src="img/WhatsApp Image 2026-07-22 at 08.01.08.jpeg"
+                alt="Profile Photo"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="row mb-5 fade-up">
+          <div class="col text-center">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+        </div>
+
+        <!-- Tambahkan justify-content-center di baris ini -->
+        <div class="row g-4 mb-5 justify-content-center">
+          <!-- Kartu 1: Web Development -->
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="about-card glass-card">
+              <div class="about-icon"><i class="bi bi-code-slash"></i></div>
+              <h5>Web Development</h5>
+              <p>
+                Saya adalah siswi kelas 11 Rekayasa Perangkat Lunak (RPL) di SMKN 5 Malang yang memiliki minat di bidang pengembangan perangkat lunak dan teknologi. Saya senang mempelajari pemrograman, membuat website, serta terus
+                mengembangkan keterampilan melalui berbagai proyek. Saya adalah pribadi yang disiplin, cepat belajar, dan selalu antusias untuk mencoba teknologi baru.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kartu 2: UI/UX Design -->
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="about-card glass-card">
+              <div class="about-icon"><i class="bi bi-palette"></i></div>
+              <h5>UI/UX Design</h5>
+              <p>
+                Saat ini saya terus mengembangkan kemampuan dalam pengembangan web, mulai dari membuat tampilan antarmuka yang responsif hingga memahami dasar-dasar logika pemrograman. Saya percaya bahwa setiap proyek merupakan kesempatan
+                untuk belajar, meningkatkan kemampuan, dan membangun pengalaman. Ke depannya, saya ingin terus memperdalam pengetahuan di bidang teknologi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="row mb-5 fade-up">
+          <div class="col">
+            <h2 class="section-title">My Projects</h2>
+            <div class="title-line"></div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="project-card glass-card">
+              <div class="project-img-wrapper">
+                <img
+                  src="img/project1.jpeg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-body">
+                <h6>Personal Portfolio V1</h6>
+                <p>Desain awal web portofolio personal dengan tampilan simpel, bernuansa biru, dan tata letak minimalis.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="project-card glass-card">
+              <div class="project-img-wrapper">
+                <img
+                  src="img/project2.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-body">
+                <h6>Aplikasi Pembayaran / Kasir</h6>
+                <p>Aplikasi web interaktif untuk kalkulasi otomatis total belanja, input pembayaran, dan perhitungan kembalian.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="project-card glass-card">
+              <div class="project-img-wrapper">
+                <img
+                  src="img/project3.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-body">
+                <h6>Website Biodata</h6>
+                <p>Website sederhana yang menampilkan biodata diri menggunakan HTML dan CSS dengan tampilan tabel.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="row mb-5 fade-up">
+          <div class="col">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p class="section-subtitle">Punya pertanyaan atau mau berkolaborasi? Kirim pesan di bawah ini!</p>
+            <div class="title-line"></div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center fade-up">
+          <div class="col-lg-6">
+            <!-- Alert Success -->
+            <div
+              class="alert alert-success alert-dismissible d-none myalert mb-4"
+              role="alert"
+            >
+              <i class="bi bi-check-circle me-2"></i>
+              <strong>Berhasil!</strong> Pesan Anda telah dikirim. Terima kasih!
+              <button
+                type="button"
+                class="btn-close"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Contact Form (Sudah disesuaikan dengan Google Sheets Script) -->
+            <form
+              class="contact-form glass-card p-4 p-md-5"
+              name="submit-to-google-sheet"
+            >
+              <div class="mb-3">
+                <label
+                  for="name"
+                  class="form-label"
+                  >Nama Lengkap</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="nama"
+                  placeholder="Masukkan nama Anda..."
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="email"
+                  class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="nama@example.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="message"
+                  class="form-label"
+                  >Pesan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="pesan"
+                  rows="5"
+                  placeholder="Tuliskan pesan Anda di sini..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Tombol Kirim Normal -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg w-100 btnKirim"
+              >
+                <i class="bi bi-send me-2"></i>Kirim Pesan
+              </button>
+
+              <!-- Tombol Loading (Ditampilkan saat proses kirim) -->
+              <button
+                class="btn btn-primary btn-lg w-100 btnLoading d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Mengirim...
+              </button>
+            </form>
+
+            <!-- Social Links -->
+            <div class="social-contact mt-5 text-center">
+              <p class="mb-3">Atau hubungi saya melalui:</p>
+              <div class="social-icons">
+                <a
+                  href="#"
+                  class="social-icon"
+                  title="GitHub"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon"
+                  title="Email"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section text-center">
+      <div class="container">
+        <p class="mb-0">Made with <i class="bi bi-heart-fill text-danger"></i> by <strong>Your Name</strong> © 2026</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="btn-back-to-top"
+      title="Kembali ke Atas"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="style.js"></script>
+
+    <!-- Google Sheets Form Script -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw_uJ6USd1BKzb_TTQOtLzj7q2oKDHzxemeNrTttbNA5vFTjNoHDPZ92BogIXab51U/exec';
+      const form = document.forms['submit-to-google-sheet'];
+
+      const btnKirim = document.querySelector('.btnKirim');
+      const btnLoading = document.querySelector('.btnLoading');
+      const myalert = document.querySelector('.myalert');
+      const closeBtn = myalert.querySelector('.btn-close');
+
+      // Tutup Alert saat tombol x diklik
+      closeBtn.addEventListener('click', () => {
+        myalert.classList.add('d-none');
+      });
+
+      // Event Handler Form Submit
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Tampilkan tombol loading & sembunyikan tombol kirim
+        btnLoading.classList.remove('d-none');
+        btnKirim.classList.add('d-none');
+
+        fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form),
+        })
+          .then(() => {
+            // Kembalikan tombol ke keadaan semula
+            btnLoading.classList.add('d-none');
+            btnKirim.classList.remove('d-none');
+
+            // Tampilkan alert sukses
+            myalert.classList.remove('d-none');
+
+            // Reset form
+            form.reset();
+            console.log('Success!');
+          })
+          .catch((error) => {
+            btnLoading.classList.add('d-none');
+            btnKirim.classList.remove('d-none');
+            console.error('Error:', error);
+            alert('Ada masalah saat mengirim pesan, coba lagi!');
+          });
+      });
+    </script>
+  </body>
+</html>
